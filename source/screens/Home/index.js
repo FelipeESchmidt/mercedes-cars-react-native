@@ -1,4 +1,4 @@
-import { View, FlatList } from "react-native";
+import { FlatList } from "react-native";
 
 import mercedes from "../../mocks/mercedes";
 
@@ -14,7 +14,7 @@ function HomeScreen() {
     <>
       <FlatList
         data={mercedes.cars.available}
-        renderItem={Car}
+        renderItem={({ item }) => <Car item={item} />}
         keyExtractor={({ name }) => name}
         ListHeaderComponent={
           <>
@@ -27,7 +27,7 @@ function HomeScreen() {
         ListFooterComponent={
           <FlatList
             data={mercedes.cars.unavailable}
-            renderItem={Car}
+            renderItem={({ item }) => <Car item={item} />}
             keyExtractor={({ name }) => name}
             ListHeaderComponent={
               <OSText style={styles.text}>
