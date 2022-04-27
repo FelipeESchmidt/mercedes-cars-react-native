@@ -1,20 +1,35 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, SafeAreaView, View, StatusBar } from "react-native";
+import HomeScreen from "./source/screens/Home";
+
+import {
+  useFonts,
+  OpenSans_300Light,
+  OpenSans_500Medium,
+  OpenSans_700Bold,
+} from "@expo-google-fonts/open-sans";
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    OpenSans_300Light,
+    OpenSans_500Medium,
+    OpenSans_700Bold,
+  });
+
+  if (!fontsLoaded) {
+    return <View />;
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
-    </View>
+      <HomeScreen />
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#1e1e1e",
   },
 });
