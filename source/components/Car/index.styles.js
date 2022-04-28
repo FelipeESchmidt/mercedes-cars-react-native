@@ -32,7 +32,7 @@ export const styles = StyleSheet.create({
   dots: {
     flexDirection: "row",
     position: "absolute",
-    bottom: -10,
+    bottom: -25,
     alignSelf: "center",
   },
   dot: {
