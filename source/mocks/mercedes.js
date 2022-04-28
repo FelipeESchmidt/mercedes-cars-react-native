@@ -1,13 +1,31 @@
 import logo from "../../assets/mercedes-logo.png";
-import classeAHatch from "../../assets/Cars/classeAHatch.png";
-import classeASedan from "../../assets/Cars/classeASedan.png";
-import classeCSedan from "../../assets/Cars/classeCSedan.png";
-import classeESedan from "../../assets/Cars/classeESedan.png";
-import GLA_SUV from "../../assets/Cars/GLA_SUV.png";
-import GLB_SUV from "../../assets/Cars/GLB_SUV.png";
-import GLC_SUV from "../../assets/Cars/GLC_SUV.png";
-import GLC_Coupe from "../../assets/Cars/GLC_Coupe.png";
-import CLA_Coupe from "../../assets/Cars/CLA_Coupe.png";
+import classeAHatch_A from "../../assets/Cars/classeAHatch_A.png";
+import classeAHatch_B from "../../assets/Cars/classeAHatch_B.png";
+import classeAHatch_C from "../../assets/Cars/classeAHatch_C.png";
+import classeASedan_A from "../../assets/Cars/classeASedan_A.png";
+import classeASedan_B from "../../assets/Cars/classeASedan_B.png";
+import classeASedan_C from "../../assets/Cars/classeASedan_C.png";
+import classeCSedan_A from "../../assets/Cars/classeCSedan_A.png";
+import classeCSedan_B from "../../assets/Cars/classeCSedan_B.png";
+import classeCSedan_C from "../../assets/Cars/classeCSedan_C.png";
+import classeESedan_A from "../../assets/Cars/classeESedan_A.png";
+import classeESedan_B from "../../assets/Cars/classeESedan_B.png";
+import classeESedan_C from "../../assets/Cars/classeESedan_C.png";
+import GLA_SUV_A from "../../assets/Cars/GLA_SUV_A.png";
+import GLA_SUV_B from "../../assets/Cars/GLA_SUV_B.png";
+import GLA_SUV_C from "../../assets/Cars/GLA_SUV_C.png";
+import GLB_SUV_A from "../../assets/Cars/GLB_SUV_A.png";
+import GLB_SUV_B from "../../assets/Cars/GLB_SUV_B.png";
+import GLB_SUV_C from "../../assets/Cars/GLB_SUV_C.png";
+import GLC_SUV_A from "../../assets/Cars/GLC_SUV_A.png";
+import GLC_SUV_B from "../../assets/Cars/GLC_SUV_B.png";
+import GLC_SUV_C from "../../assets/Cars/GLC_SUV_C.png";
+import GLC_Coupe_A from "../../assets/Cars/GLC_Coupe_A.png";
+import GLC_Coupe_B from "../../assets/Cars/GLC_Coupe_B.png";
+import GLC_Coupe_C from "../../assets/Cars/GLC_Coupe_C.png";
+import CLA_Coupe_A from "../../assets/Cars/CLA_Coupe_A.png";
+import CLA_Coupe_B from "../../assets/Cars/CLA_Coupe_B.png";
+import CLA_Coupe_C from "../../assets/Cars/CLA_Coupe_C.png";
 
 const mercedes = {
   header: {
@@ -24,7 +42,7 @@ const mercedes = {
     available: [
       {
         name: "Mercedes-Benz Classe A Hatch",
-        image: classeAHatch,
+        images: [classeAHatch_A, classeAHatch_B, classeAHatch_C],
         info: [
           {
             carId: "classeAHatch",
@@ -48,7 +66,7 @@ const mercedes = {
       },
       {
         name: "Mercedes-Benz Classe A Sedan",
-        image: classeASedan,
+        images: [classeASedan_A, classeASedan_B, classeASedan_C],
         info: [
           {
             carId: "classeASedan",
@@ -72,7 +90,7 @@ const mercedes = {
       },
       {
         name: "Mercedes-Benz Classe C Sedan",
-        image: classeCSedan,
+        images: [classeCSedan_A, classeCSedan_B, classeCSedan_C],
         info: [
           {
             carId: "classeCSedan",
@@ -90,7 +108,7 @@ const mercedes = {
       },
       {
         name: "Mercedes-Benz GLA SUV",
-        image: GLA_SUV,
+        images: [GLA_SUV_A, GLA_SUV_B, GLA_SUV_C],
         info: [
           {
             carId: "GLA_SUV",
@@ -108,7 +126,7 @@ const mercedes = {
       },
       {
         name: "Mercedes-Benz GLB SUV",
-        image: GLB_SUV,
+        images: [GLB_SUV_A, GLB_SUV_B, GLB_SUV_C],
         info: [
           {
             carId: "GLB_SUV",
@@ -135,7 +153,7 @@ const mercedes = {
     unavailable: [
       {
         name: "Mercedes-Benz Classe E Sedan",
-        image: classeESedan,
+        images: [classeESedan_A, classeESedan_B, classeESedan_C],
         info: [
           {
             carId: "classeESedan",
@@ -159,7 +177,7 @@ const mercedes = {
       },
       {
         name: "Mercedes-Benz GLC SUV",
-        image: GLC_SUV,
+        images: [GLC_SUV_A, GLC_SUV_B, GLC_SUV_C],
         info: [
           {
             carId: "GLC_SUV",
@@ -177,7 +195,7 @@ const mercedes = {
       },
       {
         name: "Mercedes-Benz GLC Coupé",
-        image: GLC_Coupe,
+        images: [GLC_Coupe_A, GLC_Coupe_B, GLC_Coupe_C],
         info: [
           {
             carId: "GLC_Coupe",
@@ -201,7 +219,7 @@ const mercedes = {
       },
       {
         name: "Mercedes-Benz CLA Coupé",
-        image: CLA_Coupe,
+        images: [CLA_Coupe_A, CLA_Coupe_B, CLA_Coupe_C],
         info: [
           {
             carId: "CLA_Coupe",
