@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     margin: 20,
     fontSize: 20,
     borderBottomWidth: 1,
-    borderBottomColor: "red",
+    borderBottomColor: "#e53935",
     color: "#b3b3b3",
   },
 });
